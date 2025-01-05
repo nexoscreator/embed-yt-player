@@ -28,13 +28,13 @@ Lazy YouTube Player is a lightweight, customizable YouTube player. It provides a
 
 ```html
 <script type='module'
-  src="https://cdn.jsdelivr.net/gh/nexoscreator/lazy-youtube-player@v0.1.0/yt-player.min.js"
+  src="https://cdn.jsdelivr.net/npm/lazy-youtube-player@v0.3.0/yt-player.min.js"
   defer
 ></script>
 
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/nexoscreator/lazy-youtube-player@v0.1.0/yt-player.min.css"
+  href="https://cdn.jsdelivr.net/npm/lazy-youtube-player@v0.3.0/yt-player.min.css"
 />
 ```
 
