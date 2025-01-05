@@ -5,7 +5,7 @@
 
 ---
 
-# NexosYT - Lazy YouTube Player
+# NexosYT - Lazy YouTube Player 🎥
 
 ![image](.github/preview.png)
 
@@ -13,18 +13,49 @@ Lazy YouTube Player is a lightweight, customizable YouTube player component with
 
 ---
 
-### Features
+### Features ✨
 
-- Lazy loading of YouTube videos
+- Lazy loading of YouTube videos using Intersection Observer API
 - Support for React, Vue, and Svelte
-- Customizable player options
-- TypeScript support
-- Smooth transitions and hover effects
+- TypeScript support for improved developer experience
+- Customizable player options (thumbnail, play button, etc.)
+- Accessibility improvements with ARIA attributes
 - Responsive design
+- Error handling for invalid video IDs or API failures
 
 ---
 
-### Links
+### Installation 📦
+
+```html
+<script type='module'
+  src="https://cdn.jsdelivr.net/gh/nexoscreator/lazy-youtube-player@v0.1.0/yt-player.min.js"
+  defer
+></script>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/nexoscreator/lazy-youtube-player@v0.1.0/yt-player.min.css"
+/>
+```
+
+---
+
+### Usage 🚀
+
+Here's a basic example of how to use the Lazy YouTube Player in a React application:
+
+```html
+<div
+  class="NexosYt"
+  data-embed="YT_VIDEO_ID"
+  data-thumbnail="CUSTOM_THUMBNAIL_URL"
+></div>
+```
+
+---
+
+### Links 🔗
 
 [![Web Demo](https://img.shields.io/badge/Web-Demo-blue?style=for-the-badge&logo=google-chrome)](https://nexoscreator.github.io/lazy-youtube-player)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-green?style=for-the-badge&logo=github)](https://github.com/nexoscreator/lazy-youtube-player)
@@ -32,110 +63,37 @@ Lazy YouTube Player is a lightweight, customizable YouTube player component with
 
 ---
 
-### Installation
-
-Choose the package that corresponds to your framework:
-
-### React
-
-```bash
-npm install @lazy-youtube-player/react
-```
-
-### Vue
-
-```shellscript
-npm install @lazy-youtube-player/vue
-```
-
-### Svelte
-
-```shellscript
-npm install @lazy-youtube-player/svelte
-```
-
-### Vanilla
-```html
-<script src="https://cdn.jsdelivr.net/gh/nexoscreator/lazy-youtube-player@v0.0.1/yt-player.min.js" defer></script>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nexoscreator/lazy-youtube-player@v0.0.1/yt-player.min.css">
-```
-
----
-
-## Usage
-
-### React
-
-```javascriptreact
-import React from 'react';
-import LazyYoutubePlayerComponent from './components/LazyYoutubePlayerComponent';
-
-function App() {
-  return (
-    <div className="App">
-      <LazyYoutubePlayerComponent videoId="9FubrG9p3kc" />
-    </div>
-  );
-}
-
-export default App;
-```
-
-### Vue or Nuxt 3
-
-```vue
-<template>
-  <LazyYoutubePlayer videoId="9FubrG9p3kc" />
-</template>
-
-<script setup>
-import LazyYoutubePlayer from '~/components/LazyYoutubePlayer.vue';
-</script>
-```
-
-### Svelte
-
-```svelte
-<script>
-  import LazyYoutubePlayer from './components/LazyYoutubePlayer.svelte';
-</script>
-
-<LazyYoutubePlayer videoId="9FubrG9p3kc" />
-```
-
-### Vanilla
-  ```html
-  <div class="NexosYt" data-embed="YT_VIDEO_ID"></div>
-  ```
-
----
-
 ## API
 
-The LazyYoutubePlayer component accepts the following props:
+The LazyYouTubePlayer component accepts the following props:
 
 - `videoId` (string, required): The YouTube video ID.
+- `thumbnailUrl` (string, optional): Custom thumbnail URL. If not provided, the default YouTube thumbnail will be used.
+- `playButtonUrl` (string, optional): Custom play button URL. If not provided, a default play button will be used.
 - `width` (number, optional): The width of the player. Default: 640.
 - `height` (number, optional): The height of the player. Default: 360.
-- `autoplay` (boolean, optional): Whether to autoplay the video. Default: false.
+- `autoplay` (boolean, optional): Whether to autoplay the video when loaded. Default: false.
 
 ---
 
-### Contributing
-Contributions are welcome! If you have any suggestions, bug fixes, or improvements, feel free to open an issue or submit a pull request.
-If you'd like to contribute to this project, please follow these ste
+### Contributing 🤝
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/improvement`).
-3. Make your changes and commit them (`git commit -m 'Add feature/improvement'`).
-4. Push to the branch (`git push origin feature/improvement`).
-5. Open a Pull Request.
+Contributions are welcome! If you have any suggestions, bug fixes, or improvements, feel free to open an issue or submit a pull request.
 
 Please check the [CONTRIBUTING.md](CONTRIBUTING.md) file for more details.
 
 ---
 
-### License
+### License 📄
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License - see the [License](LICENSE) file for details.
+
+---
+
+### Support 💖
+
+If you like this project, please consider giving it a ⭐ on [GitHub](https://github.com/nexoscreator/lazy-youtube-player) and sharing it with your friends!
+
+---
+
+Created with ❤️ by [@nexoscreator](https://github.com/nexoscreator)
