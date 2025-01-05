@@ -7,7 +7,7 @@
 
 # NexosYT - Lazy YouTube Player 🎥
 
-![image](.github/preview.png)
+![image](.github/preview.gif)
 
 Lazy YouTube Player is a lightweight, customizable YouTube player. It provides a simple way to embed YouTube videos with lazy loading capabilities, improving your website's performance.
 

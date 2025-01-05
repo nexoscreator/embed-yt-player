@@ -24,6 +24,8 @@ jobs:
         run: npm run build
 
       - name: Create new branch for release
+        env:
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
@@ -31,4 +33,4 @@ jobs:
           cp -r dist/* .
           git add .
           git commit -m "Build files for release ${{ github.event.release.tag_name }}"
-          git push origin release-${{ github.event.release.tag_name }}
+          git push https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git release-${{ github.event.release.tag_name }}
