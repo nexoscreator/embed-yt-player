@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexYT Player Showcase</title>
+    <meta name="description"
+        content="Showcase of NexYT Player - A responsive, lazy-loading YouTube player with enhanced performance and modern design.">
+    <meta name="keywords" content="NexYT Player, YouTube Player, Lazy Loading, Responsive Design">
+    <meta name="author" content="Nexos Creator">
+
+    <link rel="stylesheet" href="./yt-player.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #007bff;
+        }
+
+        header p {
+            font-size: 1rem;
+            margin: 5px 0 20px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            max-width: 1080px;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .NexosYt {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>NexYT Player</h1>
+        <p>Responsive YouTube player with lazy loading and enhanced performance.</p>
+    </header>
+
+    <main>
+        <div class="NexosYt" data-embed="RihVtSVzYCw" role="application" aria-label="YouTube Video Player"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 NexYT Player. All rights reserved. | <a
+                href="https://github.com/nexoscreator/lazy-youtube-player">View on Github</a> | <a
+                href="https://www.youtube.com/@nexoscreator">Join our Community</a></p>
+    </footer>
+
+    <script type="module" src="./yt-player.js" defer></script>
+</body>
+
+</html>
