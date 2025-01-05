@@ -9,14 +9,13 @@
 
 ![image](.github/preview.png)
 
-Lazy YouTube Player is a lightweight, customizable YouTube player component with support for React, Vue, and Svelte. It provides a simple way to embed YouTube videos with lazy loading capabilities, improving your website's performance.
+Lazy YouTube Player is a lightweight, customizable YouTube player. It provides a simple way to embed YouTube videos with lazy loading capabilities, improving your website's performance.
 
 ---
 
 ### Features ✨
 
 - Lazy loading of YouTube videos using Intersection Observer API
-- Support for React, Vue, and Svelte
 - TypeScript support for improved developer experience
 - Customizable player options (thumbnail, play button, etc.)
 - Accessibility improvements with ARIA attributes
@@ -49,9 +48,10 @@ Here's a basic example of how to use the Lazy YouTube Player in a React applicat
 <div
   class="NexosYt"
   data-embed="YT_VIDEO_ID"
-  data-thumbnail="CUSTOM_THUMBNAIL_URL"
 ></div>
 ```
+
+optional: `data-thumbnail="CUSTOM_THUMBNAIL_URL"`
 
 ---
 
@@ -69,7 +69,6 @@ The LazyYouTubePlayer component accepts the following props:
 
 - `videoId` (string, required): The YouTube video ID.
 - `thumbnailUrl` (string, optional): Custom thumbnail URL. If not provided, the default YouTube thumbnail will be used.
-- `playButtonUrl` (string, optional): Custom play button URL. If not provided, a default play button will be used.
 - `width` (number, optional): The width of the player. Default: 640.
 - `height` (number, optional): The height of the player. Default: 360.
 - `autoplay` (boolean, optional): Whether to autoplay the video when loaded. Default: false.
