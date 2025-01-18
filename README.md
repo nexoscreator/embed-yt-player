@@ -42,7 +42,7 @@ Lazy YouTube Player is a lightweight, customizable YouTube player. It provides a
 
 ### Usage 🚀
 
-Here's a basic example of how to use the Lazy YouTube Player in a React application:
+Here's a basic example of how to use the Lazy YouTube Player in a website:
 
 ```html
 <div
@@ -59,7 +59,8 @@ optional: `data-thumbnail="CUSTOM_THUMBNAIL_URL"`
 
 [![Web Demo](https://img.shields.io/badge/Web-Demo-blue?style=for-the-badge&logo=google-chrome)](https://nexoscreator.github.io/lazy-youtube-player)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-green?style=for-the-badge&logo=github)](https://github.com/nexoscreator/lazy-youtube-player)
-[![YouTube Video](https://img.shields.io/badge/YouTube-Video-red?style=for-the-badge&logo=youtube)](https://youtu.be/rMnDe0iEGRs?si=B2viVesOhHYusbBG)
+[![YouTube Video](https://img.shields.io/badge/YouTube-Video-red?style=for-the-badge&logo=youtube)](https://youtu.be/rMnDe0iEGRs?si=L7UPOsBBW5Q)
+[![NPM Package](https://img.shields.io/badge/NPM-Package-orange?style=for-the-badge&logo=npm)]([https://www.npmjs.com/package/featurastic-ui-buttons](https://www.npmjs.com/package/lazy-youtube-player)) 
 
 ---
 
@@ -67,11 +68,11 @@ optional: `data-thumbnail="CUSTOM_THUMBNAIL_URL"`
 
 The LazyYouTubePlayer component accepts the following props:
 
+- `NexosYT` (string, required): The YouTube Player Class.
 - `videoId` (string, required): The YouTube video ID.
 - `thumbnailUrl` (string, optional): Custom thumbnail URL. If not provided, the default YouTube thumbnail will be used.
 - `width` (number, optional): The width of the player. Default: 640.
 - `height` (number, optional): The height of the player. Default: 360.
-- `autoplay` (boolean, optional): Whether to autoplay the video when loaded. Default: false.
 
 ---
 
